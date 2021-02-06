@@ -43,7 +43,7 @@ au FocusGained,BufEnter * checktime
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
-let mapleader = ","
+let mapleader = "\\"
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -159,6 +159,9 @@ set encoding=utf8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
+
+" Set line limits to 80 and 100 characters
+set colorcolumn=80,100
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
