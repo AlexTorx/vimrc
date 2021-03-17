@@ -218,3 +218,17 @@ let g:closetag_shortcut = '>'
 
 " Add > at current position without closing the current tag, default is ''
 let g:closetag_close_shortcut = '<leader>>'
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Black python formatting (https://github.com/psf/black)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Set line length to 79 characters
+let g:black_linelength = 79
+
+" Run black on save for python files
+autocmd BufWritePre *.py execute ':Black'
+
+" Pressing F9 performs black formatting
+nnoremap <F9> :Black<CR>
